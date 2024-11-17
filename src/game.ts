@@ -1,4 +1,4 @@
-import { engineInit, setShowSplashScreen } from 'littlejsengine';
+import * as LittleJS from 'littlejsengine';
 
 import {
   gameInit,
@@ -8,6 +8,12 @@ import {
   gameUpdatePost,
 } from './lifecycles';
 
-setShowSplashScreen(true);
+LittleJS.setShowSplashScreen(true);
 
-engineInit(gameInit, gameUpdate, gameUpdatePost, gameRender, gameRenderPost);
+LittleJS.engineInit(
+  gameInit,
+  gameUpdate,
+  gameUpdatePost,
+  gameRender,
+  gameRenderPost,
+);

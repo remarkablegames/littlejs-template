@@ -4,10 +4,10 @@ import { hsl } from 'littlejsengine';
 import { getParticleEmitter } from '../shared';
 
 // sound effects
-const sound_click = new LittleJS.Sound([1, 0.5]);
+const soundClick = new LittleJS.Sound([1, 0.5]);
 
 // medals
-const medal_example = new LittleJS.Medal(
+const medalExample = new LittleJS.Medal(
   0,
   'Example Medal',
   'Welcome to LittleJS!',
@@ -20,7 +20,7 @@ export function gameUpdate() {
 
   if (LittleJS.mouseWasPressed(0)) {
     // play sound when mouse is pressed
-    sound_click.play(LittleJS.mousePos);
+    soundClick.play(LittleJS.mousePos);
 
     // change particle color and set to fade out
     particleEmitter.colorStartA = hsl();
@@ -29,7 +29,7 @@ export function gameUpdate() {
     particleEmitter.colorEndB = particleEmitter.colorStartB.scale(1, 0);
 
     // unlock medals
-    medal_example.unlock();
+    medalExample.unlock();
   }
 
   // move particles to mouse location if on screen
