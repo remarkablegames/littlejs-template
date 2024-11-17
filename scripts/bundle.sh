@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # build bundle
-BUNDLE=true npm run build -- --base=./
+npm run build -- --base=./
 
 # zip file
 zip -r "dist/$(npm pkg get name | tr -d \")-$(npm pkg get version | tr -d \").zip" dist
