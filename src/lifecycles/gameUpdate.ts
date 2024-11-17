@@ -1,8 +1,7 @@
 import * as LittleJS from 'littlejsengine';
+import { hsl } from 'littlejsengine';
 
 import { getParticleEmitter } from '../shared';
-
-const { hsl } = LittleJS;
 
 // sound effects
 const sound_click = new LittleJS.Sound([1, 0.5]);

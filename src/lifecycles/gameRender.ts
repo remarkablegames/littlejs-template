@@ -1,6 +1,5 @@
 import * as LittleJS from 'littlejsengine';
-
-const { tile, vec2, hsl } = LittleJS;
+import { hsl, tile, vec2 } from 'littlejsengine';
 
 export function gameRender() {
   // draw a grey square in the background without using webgl

@@ -1,8 +1,7 @@
 import * as LittleJS from 'littlejsengine';
+import { hsl, tile, vec2 } from 'littlejsengine';
 
 import { setParticleEmitter } from '../shared';
-
-const { tile, vec2, hsl } = LittleJS;
 
 export function gameInit() {
   // create tile collision and visible tile layer

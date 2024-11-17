@@ -1,6 +1,5 @@
 import * as LittleJS from 'littlejsengine';
-
-const { vec2 } = LittleJS;
+import { vec2 } from 'littlejsengine';
 
 export function gameRenderPost() {
   // draw to overlay canvas for hud rendering
