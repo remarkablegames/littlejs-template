@@ -1,4 +1,11 @@
+<p align="center">
+  <img src="https://github.com/remarkablegames/littlejs-template/blob/master/public/logo192.png" alt="LittleJS Template">
+</p>
+
 # littlejs-template
+
+![release](https://img.shields.io/github/v/release/remarkablegames/littlejs-template)
+[![build](https://github.com/remarkablegames/littlejs-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/littlejs-template/actions/workflows/build.yml)
 
 <kbd>littlejs-template</kbd> is a template for making [LittleJS](https://github.com/KilledByAPixel/LittleJS) games.
 
