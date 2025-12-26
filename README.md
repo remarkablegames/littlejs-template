@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/remarkablegames/littlejs-template/blob/master/public/logo192.png" alt="LittleJS Template">
+  <img src="public/logo192.png" alt="LittleJS Template">
 </p>
 
 # LittleJS Template
