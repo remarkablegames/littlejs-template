@@ -5,10 +5,8 @@ import { setParticleEmitter } from '../shared';
 
 export function gameInit() {
   // create tile collision and visible tile layer
-  const tileCollisionSize = vec2(32, 16);
-  LittleJS.initTileCollision(tileCollisionSize);
   const pos = vec2();
-  const tileLayer = new LittleJS.TileLayer(pos, tileCollisionSize);
+  const tileLayer = new LittleJS.TileCollisionLayer(pos, vec2(32, 16));
 
   // get level data from the tiles image
   const mainContext = LittleJS.mainContext;
@@ -21,10 +19,10 @@ export function gameInit() {
     tileImage.height,
   ).data;
 
-  for (pos.x = tileCollisionSize.x; pos.x--; )
-    for (pos.y = tileCollisionSize.y; pos.y--; ) {
+  for (pos.x = tileLayer.size.x; pos.x--; )
+    for (pos.y = tileLayer.size.y; pos.y--; ) {
       // check if this pixel is set
-      const i = pos.x + tileImage.width * (15 + tileCollisionSize.y - pos.y);
+      const i = pos.x + tileImage.width * (15 + tileLayer.size.y - pos.y);
       if (!imageData[4 * i]) continue;
 
       // set tile data
@@ -39,33 +37,33 @@ export function gameInit() {
         color,
       );
       tileLayer.setData(pos, data);
-      LittleJS.setTileCollisionData(pos, 1);
+      tileLayer.setCollisionData(pos);
     }
 
   // draw tile layer with new data
   tileLayer.redraw();
 
   // move camera to center of collision
-  LittleJS.setCameraPos(tileCollisionSize.scale(0.5));
-  LittleJS.setCameraScale(48);
+  LittleJS.setCameraPos(tileLayer.size.scale(0.5));
+  LittleJS.setCameraScale(32);
 
   // enable gravity
-  LittleJS.setGravity(-0.01);
+  LittleJS.setGravity(vec2(0, -0.01));
 
   // create particle emitter
   const particleEmitter = new LittleJS.ParticleEmitter(
     vec2(16, 9),
     0, // emitPos, emitAngle
-    1,
+    0,
     0,
     500,
-    Math.PI, // emitSize, emitTime, emitRate, emiteCone
+    3.14, // emitSize, emitTime, rate, cone
     tile(0, 16), // tileIndex, tileSize
     hsl(1, 1, 1),
     hsl(0, 0, 0), // colorStartA, colorStartB
     hsl(0, 0, 0, 0),
     hsl(0, 0, 0, 0), // colorEndA, colorEndB
-    2,
+    1,
     0.2,
     0.2,
     0.1,
@@ -73,13 +71,14 @@ export function gameInit() {
     0.99,
     1,
     1,
-    Math.PI, // damping, angleDamping, gravityScale, cone
+    3.14, // damping, angleDamping, gravityScale, cone
     0.05,
     0.5,
     true,
     true, // fadeRate, randomness, collide, additive
   );
-  particleEmitter.elasticity = 0.3; // bounce when it collides
-  particleEmitter.trailScale = 2; // stretch in direction of motion
+  particleEmitter.restitution = 0.3; // bounce when it collides
+  particleEmitter.trailScale = 2; // stretch stretch as it moves
+  particleEmitter.velocityInheritance = 0.3; // inherit emitter velocity
   setParticleEmitter(particleEmitter);
 }
