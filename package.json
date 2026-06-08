@@ -16,7 +16,7 @@
   },
   "homepage": "https://remarkablegames.org/littlejs-template/",
   "dependencies": {
-    "littlejsengine": "1.18.17"
+    "littlejsengine": "1.18.19"
   },
   "devDependencies": {
     "@commitlint/cli": "21.0.2",
