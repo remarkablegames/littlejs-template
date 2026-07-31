@@ -19,8 +19,8 @@ export function gameInit() {
     tileImage.height,
   ).data;
 
-  for (pos.x = tileLayer.size.x; pos.x--; )
-    for (pos.y = tileLayer.size.y; pos.y--; ) {
+  for (pos.x = tileLayer.size.x; pos.x--;)
+    for (pos.y = tileLayer.size.y; pos.y--;) {
       // check if this pixel is set
       const i = pos.x + tileImage.width * (15 + tileLayer.size.y - pos.y);
       if (!imageData[4 * i]) continue;
