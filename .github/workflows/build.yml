@@ -42,12 +42,12 @@ jobs:
           start: python3 -m http.server 3000 --directory dist
           wait-on: http://localhost:3000
 
-      - name: Build for deploy
+      - name: Build for GitHub Pages
         run: npm run build -- --base /${{ github.event.repository.name }}/
         env:
           VITE_GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         if: github.ref_name == 'master'
         uses: remarkablemark/gitploy-action@v1
         with:
