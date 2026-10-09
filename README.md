@@ -48,7 +48,7 @@ Update the files:
 - [ ] `README.md`
 - [ ] `package.json`
 - [ ] `index.html`
-- [ ] `public/manifest.json`
+- [ ] `public/manifest.webmanifest`
 - [ ] `src/index.ts`
 
 Initialize a new repository:
@@ -74,16 +74,6 @@ Once you're ready, [push the local repository to GitHub](https://help.github.com
 git remote add origin <remote-repository-url>
 git push origin -u origin master
 ```
-
-## Environment Variables
-
-Set the environment variables:
-
-```sh
-less .env
-```
-
-Update the **Secrets** in the repository **Settings**.
 
 ## Available Scripts
 
