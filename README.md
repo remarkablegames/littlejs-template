@@ -51,30 +51,6 @@ Update the files:
 - [ ] `public/manifest.webmanifest`
 - [ ] `src/game.ts`
 
-Initialize a new repository:
-
-```sh
-rm -rf .git
-git init
-```
-
-Make your first commit:
-
-```sh
-git add .
-git commit -m 'feat: initialize project from littlejs-template'
-```
-
-> [!NOTE]
-> Commit messages follow [Conventional Commits](https://conventionalcommits.org/), which helps with release.
-
-Once you're ready, [push the local repository to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) (or another remote repository):
-
-```sh
-git remote add origin <remote-repository-url>
-git push origin -u origin master
-```
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -103,7 +79,7 @@ Your game is ready to be deployed!
 
 Builds the game and packages it into a Zip file in the `dist` folder.
 
-Your game can be uploaded to your server, [Itch.io](https://itch.io/), [Newgrounds](https://www.newgrounds.com/), etc.
+Your game can be uploaded to your server, [itch.io](https://itch.io/), etc.
 
 ## License
 
