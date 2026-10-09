@@ -24,7 +24,7 @@ LittleJS.setShowSplashScreen(true);
 LittleJS.setTileDefaultBleed(0.5);
 
 // Startup LittleJS Engine
-LittleJS.engineInit(
+void LittleJS.engineInit(
   gameInit,
   gameUpdate,
   gameUpdatePost,

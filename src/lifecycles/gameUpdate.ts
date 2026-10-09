@@ -29,7 +29,7 @@ export function gameUpdate() {
     particleEmitter.colorEndB = particleEmitter.colorStartB.scale(1, 0);
 
     // unlock medals
-    medalExample.unlock();
+    void medalExample.unlock();
   }
 
   // move particles to mouse location if on screen
