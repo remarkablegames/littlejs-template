@@ -14,7 +14,7 @@
     "start": "vite --open"
   },
   "dependencies": {
-    "littlejsengine": "1.25.0"
+    "littlejsengine": "1.27.0"
   },
   "devDependencies": {
     "@commitlint/cli": "21.2.3",
@@ -29,7 +29,7 @@
     "prettier": "3.9.9",
     "typescript": "6.0.3",
     "typescript-eslint": "8.71.1",
-    "vite": "8.3.3",
+    "vite": "8.3.4",
     "vite-plugin-html": "3.2.2"
   },
   "private": true,
