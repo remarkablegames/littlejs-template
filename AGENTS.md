@@ -23,26 +23,26 @@ description: Expert technical engineer for this LittleJS game
 
 ## Commands
 
-- **Build:** `npm run build` (builds web game with Vite, outputs to dist/)
-- **Lint:** `npm run lint` (runs ESLint; `npm run lint:fix` auto-fixes errors)
-- **Type check:** `npm run lint:tsc` (checks TypeScript for errors)
-- **Start:** `npm start` (starts and opens the development web server at http://localhost:5173 — run manually by the user; don't execute automatically)
+- `npm run build`: builds web game with Vite, outputs to `dist/`
+- `npm run lint`: runs ESLint; `npm run lint:fix` auto-fixes errors
+- `npm run lint:tsc`: checks TypeScript for errors
+- `npm start`: starts and opens the development web server at http://localhost:5173 (run manually by the user; don't execute automatically)
 
 ## Standards
 
-Follow these rules for all code you write:
+Follow these rules for all code you write.
 
-**Naming conventions:**
-
-- Functions: camelCase (`getGameObject`, `createLevel`)
-- Classes: PascalCase (`GameStateManager`, `Character`)
-- Constants: UPPER_SNAKE_CASE (`GAME_CONFIG`, `MAX_LEVEL`)
-
-**Assets:**
+Assets:
 
 - Asset paths must not start with a slash `/`
 
-**Code style:**
+Naming conventions:
+
+- Functions: camelCase (`getGameObject`, `createLevel`)
+- Classes: PascalCase (`GameStateManager`, `Player`)
+- Constants: UPPER_SNAKE_CASE (`GAME_CONFIG`, `MAX_LEVEL`)
+
+Code style:
 
 - [Prettier](./.prettierrc.json) for formatting
 - [ESLint](./eslint.config.mts) with `typescript-eslint` strict and stylistic type-checked configs
