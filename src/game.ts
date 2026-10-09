@@ -1,10 +1,8 @@
-/*
-    Little JS TypeScript Demo
-    - A simple starter project
-    - Shows how to use LittleJS with modules
-*/
-
-'use strict';
+/**
+ * Little JS TypeScript Demo
+ * - A simple starter project
+ * - Shows how to use LittleJS with modules
+ */
 
 // import LittleJS module
 import * as LittleJS from 'littlejsengine';
