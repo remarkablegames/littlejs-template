@@ -49,7 +49,7 @@ Update the files:
 - [ ] `package.json`
 - [ ] `index.html`
 - [ ] `public/manifest.webmanifest`
-- [ ] `src/index.ts`
+- [ ] `src/game.ts`
 
 Initialize a new repository:
 

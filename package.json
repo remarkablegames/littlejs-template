@@ -7,8 +7,8 @@
     "bundle": "bash scripts/bundle.sh",
     "clean": "rm -rf dist",
     "lint": "eslint .",
-    "lint:fix": "tsc --project tsconfig.app.json",
-    "lint:tsc": "tsc --noEmit",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:tsc": "tsc --project tsconfig.app.json",
     "prepare": "husky",
     "preview": "vite preview",
     "start": "vite --open"
