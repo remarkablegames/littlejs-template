@@ -55,7 +55,6 @@ Update the files:
 - [ ] `package.json`
 - [ ] `index.html`
 - [ ] `public/manifest.webmanifest`
-- [ ] `src/game.ts`
 
 ## Available Scripts
 
