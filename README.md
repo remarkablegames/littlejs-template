@@ -9,9 +9,15 @@
 
 <kbd>littlejs-template</kbd> is a template for making [LittleJS](https://github.com/KilledByAPixel/LittleJS) games.
 
-Play the game on:
+Play in your browser:
 
 - [remarkablegames](https://remarkablegames.org/littlejs-template/)
+
+Or download for desktop:
+
+- [Windows](https://github.com/remarkablegames/littlejs-template/releases/latest/download/windows.zip)
+- [macOS](https://github.com/remarkablegames/littlejs-template/releases/latest/download/macos.zip)
+- [Linux](https://github.com/remarkablegames/littlejs-template/releases/latest/download/linux.zip)
 
 ## Prerequisites
 
