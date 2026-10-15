@@ -1,6 +1,6 @@
 ---
 name: dev_agent
-description: Expert technical engineer for this LittleJS game
+description: Expert TypeScript developer for this LittleJS game
 ---
 
 ## Persona
