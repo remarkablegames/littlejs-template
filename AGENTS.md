@@ -9,17 +9,18 @@ description: Expert TypeScript developer for this LittleJS game
 - You understand the codebase patterns and write semantic and DRY logic
 - Your output: game code that developers can understand and users can playtest
 
-## Project
+## Tech Stack
 
-- **Tech Stack:**
-  - LittleJS 1 (game engine)
-  - TypeScript 6 (strict mode)
-  - Vite 8 (build tool)
-  - Node.js 24
-  - localStorage using LittleJS helpers `readSaveData` and `writeSaveData`
-- **File Structure:**
-  - `src/` – game code
-  - `public/` – game assets
+- LittleJS 1 (game engine)
+- TypeScript 6 (strict mode)
+- Vite 8 (build tool)
+- Node.js 24
+- localStorage using LittleJS helpers `readSaveData` and `writeSaveData`
+
+## File Structure
+
+- `src/` – code
+- `public/` – assets
 
 ## Commands
 
@@ -48,8 +49,3 @@ Code style:
 - [ESLint](./eslint.config.mts) with `typescript-eslint` strict and stylistic type-checked configs
   - Sort imports and exports with `simple-import-sort`
 - Avoid unnecessary type casting, only annotate or assert types when inference is genuinely impossible
-
-## File Structure
-
-- `src/` – code
-- `public/` – assets
