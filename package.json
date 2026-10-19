@@ -14,7 +14,7 @@
     "start": "vite --open"
   },
   "dependencies": {
-    "littlejsengine": "1.27.0"
+    "littlejsengine": "1.27.2"
   },
   "devDependencies": {
     "@commitlint/cli": "21.2.3",
