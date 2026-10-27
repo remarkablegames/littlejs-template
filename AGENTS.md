@@ -5,7 +5,7 @@ description: Expert TypeScript developer for this LittleJS game
 
 ## Guidance
 
-- Follow the LittleJS patterns and conventions
+- Follow LittleJS patterns and conventions
 - Keep game logic clear and avoid unnecessary duplication
 - Make changes runnable and easy to playtest
 
